@@ -1,0 +1,1 @@
+6.1 When you choose "Cancel", the panel prints "You have chosen: No"
