@@ -1,1 +1,31 @@
 6.1 When you choose "Cancel", the panel prints "You have chosen: No"
+
+to modify to only Yes and No options:
+
+import javax.swing.JOptionPane;
+
+public class ChoosingOption {
+
+    public static void main(String[] args) {
+        int option = JOptionPane.showConfirmDialog(null, "Do you want to change the firstclass ticket?", null, JOptionPane.YES_NO_OPTION);
+        if(option == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }
+}
+
+to modify the options to I do and I don't:
+
+import javax.swing.JOptionPane;
+
+public class ChoosingOption {
+
+    public static void main(String[] args) {
+        String[] options = new String[2];
+        options[0] = "I do";
+        options[1] = "I don't";
+        JOptionPane.showOptionDialog(null, "Do you want to change the firstclass ticket?", null, 0, JOptionPane.PLAIN_MESSAGE, null, options, null);
+        System.exit(0);
+    }
+}
+
