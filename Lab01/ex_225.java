@@ -18,10 +18,15 @@ public class ex_225 {
         double prod = v1 * v2;
         double quotient = v1 / v2;
 
-        System.out.println(sum);
-        System.out.println(dif);
-        System.out.println(prod);
-        System.out.println(quotient);
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + dif);
+        System.out.println("Product: " + prod);
+        if(v2 == 0){
+            System.out.println("cant be devided by zero!");
+        }
+        else{
+            System.out.println("Quotient: " + quotient);
+        }
         
     }
 }
