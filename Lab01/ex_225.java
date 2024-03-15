@@ -14,9 +14,9 @@ public class ex_225 {
         sc.close();
 
         double sum = v1 + v2;
-        double dif = v1 - v2;
+        double dif = Math.abs(v1) - Math.abs(v2);
         double prod = v1 * v2;
-        double quotient = Math.abs(v1 / v2);
+        double quotient = v1 / v2;
 
         System.out.println(sum);
         System.out.println(dif);
