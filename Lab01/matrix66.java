@@ -27,23 +27,23 @@ public class matrix66 {
         int a, b;
         System.out.println("enter number of rows: ");
         a = sc.nextInt();
-        System.out.println("enter number of columns");
+        System.out.println("enter number of columns: ");
         b = sc.nextInt();
 
         System.out.println("enter the size of Maxtrix B:");
         int c, d;
         System.out.println("enter number of rows: ");
         c = sc.nextInt();
-        System.out.println("enter number of columns");
+        System.out.println("enter number of columns: ");
         d = sc.nextInt();
 
         if(a != c || b != d){
-            System.out.println("Cannot add 2 matrices of different size");
+            System.out.println("Cannot add 2 matrices of different size!");
         }
 
         else{
             int [][]A = new int[a][b];
-            System.out.println("enter values for Matrix A");
+            System.out.println("enter values for Matrix A: ");
             for(int i = 0; i < a; i++){
                 for(int j = 0; j < b; j++){
                     A[i][j] = sc.nextInt();
@@ -51,6 +51,7 @@ public class matrix66 {
             }
 
             int [][]B = new int[c][d];
+            System.out.println("enter values for Matrix B: ");
                 for(int i = 0; i < a; i++){
                     for(int j = 0; j < b; j++){
                         B[i][j] = sc.nextInt();
@@ -59,6 +60,7 @@ public class matrix66 {
 
             int res[][] = new int[a][b];
             res = add(A, B, c, d);
+            System.out.println("Results: ");
             displayMatrix(res, a, b);
         }
 
